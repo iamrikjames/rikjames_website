@@ -1,0 +1,183 @@
+/* ibm-plex-mono-regular - latin */
+
+@font-face {}
+
+// style by Martin Wolf (martinwolf.org)
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 6vw;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fdfdfd;
+}
+
+a {
+    color: #2a3990;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    -webkit-animation: fadein 0.3s;
+    animation: fadein 0.3s;
+}
+
+.emoji {
+    display: block;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 320px) {
+    .emoji {
+        margin-bottom: calc(16px + 10 * (100vw - 320px) / 1360);
+    }
+}
+
+@media (min-width: 1680) {
+    .emoji {
+        margin-bottom: 26px;
+    }
+}
+
+.title {
+    font-size: 30px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid#2a3990;
+}
+
+@media (min-width: 320px) {
+    .title {
+        font-size: calc(30px + 20 * (100vw - 320px) / 1360);
+    }
+}
+
+@media (min-width: 1680) {
+    .title {
+        font-size: 50px;
+    }
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 26px;
+}
+
+@media (min-width: 320px) {
+    .subtitle {
+        font-size: calc(20px + 14 * (100vw - 320px) / 1360);
+    }
+}
+
+@media (min-width: 1680) {
+    .subtitle {
+        font-size: 34px;
+    }
+}
+
+.text,
+.link-list {
+    font-size: 16px;
+    margin-top: 26px;
+    line-height: 1.6;
+}
+
+@media (min-width: 320px) {
+    .text,
+    .link-list {
+        font-size: calc(16px + 4 * (100vw - 320px) / 1360);
+    }
+}
+
+@media (min-width: 1680) {
+    .text,
+    .link-list {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 320px) {
+    .text,
+    .link-list {
+        margin-top: calc(16px + 10 * (100vw - 320px) / 1360);
+    }
+}
+
+@media (min-width: 1680) {
+    .text,
+    .link-list {
+        margin-top: 26px;
+    }
+}
+
+.link-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.link-list__item {
+    margin-right: 10px;
+}
+
+@media (min-width: 320px) {
+    .link-list__item {
+        margin-right: calc(10px + 10 * (100vw - 320px) / 1360);
+    }
+}
+
+@media (min-width: 1680) {
+    .link-list__item {
+        margin-right: 20px;
+    }
+}
